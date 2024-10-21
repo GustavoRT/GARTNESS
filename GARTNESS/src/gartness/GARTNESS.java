@@ -4,6 +4,10 @@
  */
 package gartness;
 
+import Controlador.ControladorGartness;
+import Modelo.ModeloGartness;
+import Vista.VentanaPrincipal;
+
 /**
  *
  * @author dam2
@@ -15,7 +19,15 @@ public class GARTNESS {
      */
     public static void main(String[] args) {
      
-        System.out.println("Iniciando...");
+       /**
+        * Creamos una nueva instancia de los objetos VentanaPrincipal
+        * y del ModeloGartness para iniciar el contructor y lanzar la ventana principal
+        */
+       VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+       ModeloGartness modeloGartness = new ModeloGartness();
+       ControladorGartness controladorGartness = new ControladorGartness(modeloGartness,ventanaPrincipal );
+       
+       // ventanaPrincipal.setVisible(true);
     }
     
 }
