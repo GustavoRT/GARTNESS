@@ -4,8 +4,8 @@
  */
 package gartness;
 
-import Controlador.ControladorGartness;
-import Modelo.ModeloGartness;
+import Controlador.ControladorVentanaPrincipal;
+import Modelo.ModeloVentanaPrincipal;
 import Vista.VentanaPrincipal;
 
 /**
@@ -24,8 +24,8 @@ public class GARTNESS {
         * y del ModeloGartness para iniciar el contructor y lanzar la ventana principal
         */
        VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
-       ModeloGartness modeloGartness = new ModeloGartness();
-       ControladorGartness controladorGartness = new ControladorGartness(modeloGartness,ventanaPrincipal );
+       ModeloVentanaPrincipal modeloGartness = new ModeloVentanaPrincipal();
+       ControladorVentanaPrincipal controladorGartness = new ControladorVentanaPrincipal(modeloGartness,ventanaPrincipal );
        
        // ventanaPrincipal.setVisible(true);
     }

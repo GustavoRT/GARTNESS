@@ -4,20 +4,20 @@
  */
 package Controlador;
 
-import Modelo.ModeloGartness;
+import Modelo.ModeloVentanaPrincipal;
 import Vista.VentanaPrincipal;
 
 /**
  *
  * @author dam2
  */
-public class ControladorGartness {
+public class ControladorVentanaPrincipal {
     
     /***
      * Declaramos los atriubutos del contronlador que van a ser necesarios 
      * para lanzar la ventana principal
      */
-    private ModeloGartness modeloGartness;
+    private ModeloVentanaPrincipal modeloGartness;
     private VentanaPrincipal ventanaPrincipal;
 
     /***
@@ -25,7 +25,7 @@ public class ControladorGartness {
      * @param modeloGartness
      * @param ventanaPrincipal 
      */
-    public ControladorGartness(ModeloGartness modeloGartness, VentanaPrincipal ventanaPrincipal) {
+    public ControladorVentanaPrincipal(ModeloVentanaPrincipal modeloGartness, VentanaPrincipal ventanaPrincipal) {
         this.modeloGartness = modeloGartness;
         this.ventanaPrincipal = ventanaPrincipal;
         ventanaPrincipal.setVisible(true);
