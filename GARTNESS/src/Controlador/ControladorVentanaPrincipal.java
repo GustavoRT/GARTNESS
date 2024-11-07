@@ -6,6 +6,8 @@ package Controlador;
 
 import Modelo.ModeloVentanaPrincipal;
 import Vista.VentanaPrincipal;
+import java.awt.Dimension;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -28,6 +30,10 @@ public class ControladorVentanaPrincipal {
     public ControladorVentanaPrincipal(ModeloVentanaPrincipal modeloGartness, VentanaPrincipal ventanaPrincipal) {
         this.modeloGartness = modeloGartness;
         this.ventanaPrincipal = ventanaPrincipal;
+        ImageIcon  icon = new ImageIcon ("src\\Recursos\\1.jpg");
+        ventanaPrincipal.getLabelImagen(icon);
+      //  ventanaPrincipal.resize(238,538);
+       // ventanaPrincipal.getLabelDimension(new Dimension(200,100));
         ventanaPrincipal.setVisible(true);
     }
 

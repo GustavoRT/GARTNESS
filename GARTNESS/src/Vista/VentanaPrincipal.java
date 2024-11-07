@@ -4,6 +4,9 @@
  */
 package Vista;
 
+import java.awt.Dimension;
+import javax.swing.Icon;
+
 /**
  *
  * @author dam2
@@ -16,7 +19,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
     }
+    
+    public void getLabelImagen(Icon icon){
+        jLabelImagen.setIcon(icon);
+    }
 
+    public void getLabelDimension(Dimension dimension){
+        jLabelImagen.setPreferredSize(dimension);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,22 +36,25 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabelImagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(520, 250));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/1.jpg"))); // NOI18N
+        setLocation(new java.awt.Point(520, 180));
+        setPreferredSize(new java.awt.Dimension(300, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabelImagen)
+                .addContainerGap(283, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabelImagen)
+                .addContainerGap(561, Short.MAX_VALUE))
         );
 
         pack();
@@ -83,6 +96,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelImagen;
     // End of variables declaration//GEN-END:variables
 }
