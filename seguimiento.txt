@@ -1,0 +1,15 @@
+Seguimiento del proyecto:
+Control de avances y ruta de desarrollo.
+###
+Sólo el profesor actuará únicamente sobre este archivo, del resto del proyecto.
+No modificar ni borrar este archivo, ya que equivale a puntuar el proyecto con 0.
+###
+
+1º modificación:
+Ya aparente MVC realizado.
+
+2º modificación:
+Elimina la imagen (en el sentido de ser usada guía del look), y debes tener 3 ventanas (una será un JDialog):
+1-> presentación, no redimensionable (tamaño mediano), simulando la carga, y desaparece por tiempo.
+2-> Salta la principal, donde todo el despliegue de botones son funcionales en el sentido de mandar un mensaje por consola, y usar "Ajustes" que lanza un JDialog modificado para configuración. Donde se configura los cambios del look, el nivel de ejecución de la dieta activa y capacidad de, por ahora, sólo añadir alimentos, y debe poder cargar los datos guardados en el arranque.
+Todo los métodos y clases documentados.
