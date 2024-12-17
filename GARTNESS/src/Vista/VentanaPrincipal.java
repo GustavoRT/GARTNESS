@@ -4,7 +4,9 @@
  */
 package Vista;
 
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.event.ActionListener;
 import javax.swing.Icon;
 
 /**
@@ -19,14 +21,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
     }
-    
-    public void getLabelImagen(Icon icon){
-        jLabelImagen.setIcon(icon);
-    }
 
-    public void getLabelDimension(Dimension dimension){
-        jLabelImagen.setPreferredSize(dimension);
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -36,26 +31,92 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelImagen = new javax.swing.JLabel();
+        jPanelArriba = new javax.swing.JPanel();
+        jLabelIconoInicio = new javax.swing.JLabel();
+        jPanelCentral = new javax.swing.JPanel();
+        jBNutricion = new javax.swing.JButton();
+        jBEntrenamiento = new javax.swing.JButton();
+        jBCalendario = new javax.swing.JButton();
+        jBComunidad = new javax.swing.JButton();
+        jBReservas = new javax.swing.JButton();
+        jBMiPerfil = new javax.swing.JButton();
+        jBDispositivos = new javax.swing.JButton();
+        jBConfiguracion = new javax.swing.JButton();
+        jBProgreso = new javax.swing.JButton();
+        jPanelAbajo = new javax.swing.JPanel();
+        jBAjustes = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(520, 180));
+        setBackground(new java.awt.Color(0, 0, 0));
+        setLocation(new java.awt.Point(660, 280));
         setPreferredSize(new java.awt.Dimension(300, 580));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabelImagen)
-                .addContainerGap(283, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabelImagen)
-                .addContainerGap(561, Short.MAX_VALUE))
-        );
+        jPanelArriba.setBackground(new java.awt.Color(0, 0, 0));
+        jPanelArriba.setLayout(new java.awt.BorderLayout());
+
+        jLabelIconoInicio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanelArriba.add(jLabelIconoInicio, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(jPanelArriba, java.awt.BorderLayout.PAGE_START);
+
+        jPanelCentral.setBackground(new java.awt.Color(0, 0, 0));
+        jPanelCentral.setLayout(new java.awt.GridLayout(3, 3, 3, 3));
+
+        jBNutricion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/nutricion.png"))); // NOI18N
+        jBNutricion.setText("Nutricion");
+        jBNutricion.setToolTipText("Nutricion");
+        jBNutricion.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelCentral.add(jBNutricion);
+
+        jBEntrenamiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/entrenamiento.png"))); // NOI18N
+        jBEntrenamiento.setText("Entrenamiento");
+        jBEntrenamiento.setToolTipText("Entrenamiento");
+        jPanelCentral.add(jBEntrenamiento);
+
+        jBCalendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/calendario.png"))); // NOI18N
+        jBCalendario.setText("Calendario");
+        jBCalendario.setToolTipText("Calendario");
+        jPanelCentral.add(jBCalendario);
+
+        jBComunidad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/comunidad.png"))); // NOI18N
+        jBComunidad.setText("Comunidad");
+        jBComunidad.setToolTipText("Comunidad");
+        jPanelCentral.add(jBComunidad);
+
+        jBReservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/reservas.png"))); // NOI18N
+        jBReservas.setText("Reservas");
+        jBReservas.setToolTipText("Reservas");
+        jPanelCentral.add(jBReservas);
+
+        jBMiPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/perfil.png"))); // NOI18N
+        jBMiPerfil.setText("Mi perfil");
+        jBMiPerfil.setToolTipText("Mi perfil");
+        jPanelCentral.add(jBMiPerfil);
+
+        jBDispositivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/dispositivos.png"))); // NOI18N
+        jBDispositivos.setText("Dispositivos");
+        jBDispositivos.setToolTipText("Dispositivos");
+        jPanelCentral.add(jBDispositivos);
+
+        jBConfiguracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ajustes.png"))); // NOI18N
+        jBConfiguracion.setText("Configuracion");
+        jBConfiguracion.setToolTipText("Configuracion");
+        jPanelCentral.add(jBConfiguracion);
+
+        jBProgreso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/progreso.png"))); // NOI18N
+        jBProgreso.setText("Progreso");
+        jBProgreso.setToolTipText("Progreso");
+        jPanelCentral.add(jBProgreso);
+
+        getContentPane().add(jPanelCentral, java.awt.BorderLayout.CENTER);
+
+        jPanelAbajo.setLayout(new java.awt.BorderLayout());
+
+        jBAjustes.setText("Ajustes");
+        jBAjustes.setToolTipText("Ajustes");
+        jPanelAbajo.add(jBAjustes, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(jPanelAbajo, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -96,6 +157,84 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabelImagen;
+    private javax.swing.JButton jBAjustes;
+    private javax.swing.JButton jBCalendario;
+    private javax.swing.JButton jBComunidad;
+    private javax.swing.JButton jBConfiguracion;
+    private javax.swing.JButton jBDispositivos;
+    private javax.swing.JButton jBEntrenamiento;
+    private javax.swing.JButton jBMiPerfil;
+    private javax.swing.JButton jBNutricion;
+    private javax.swing.JButton jBProgreso;
+    private javax.swing.JButton jBReservas;
+    private javax.swing.JLabel jLabelIconoInicio;
+    private javax.swing.JPanel jPanelAbajo;
+    private javax.swing.JPanel jPanelArriba;
+    private javax.swing.JPanel jPanelCentral;
     // End of variables declaration//GEN-END:variables
+
+    public void getJLabelIcono(Icon icono) {
+        jLabelIconoInicio.setIcon(icono);
+    }
+
+    public void ClickBtnAjustes(ActionListener l) {
+        jBConfiguracion.addActionListener(l);
+
+    }
+
+    public void ClickBtnCalendario(ActionListener l) {
+        jBCalendario.addActionListener(l);
+    }
+
+    public void ClickBtnComunidad(ActionListener l) {
+        jBComunidad.addActionListener(l);
+    }
+
+    public void ClickBtnDispositivos(ActionListener l) {
+        jBDispositivos.addActionListener(l);
+    }
+
+    public void ClickBtnEntrenamiento(ActionListener l) {
+        jBEntrenamiento.addActionListener(l);
+    }
+
+    public void ClickBtnMiPerfil(ActionListener l) {
+        jBMiPerfil.addActionListener(l);
+    }
+
+    public void ClickBtnNutricion(ActionListener l) {
+        jBNutricion.addActionListener(l);
+    }
+
+    public void ClickBtnProgreso(ActionListener l) {
+        jBProgreso.addActionListener(l);
+    }
+
+    public void ClickBtnReserva(ActionListener l) {
+        jBReservas.addActionListener(l);
+    }
+
+    public void getBotonAjustes(ActionListener l) {
+        jBAjustes.addActionListener(l);
+    }
+
+    public void ponColorjPanelCentral(Color c) {
+        jPanelCentral.setBackground(c);
+        jPanelAbajo.setBackground(c);
+        jPanelArriba.setBackground(c);
+    }
+
+    public void ponColorjBotones(Color c) {
+        jBAjustes.setBackground(c);
+        jBCalendario.setBackground(c);
+        jBComunidad.setBackground(c);
+        jBConfiguracion.setBackground(c);
+        jBDispositivos.setBackground(c);
+        jBEntrenamiento.setBackground(c);
+        jBMiPerfil.setBackground(c);
+        jBNutricion.setBackground(c);
+        jBProgreso.setBackground(c);
+        jBReservas.setBackground(c);
+
+    }
 }
